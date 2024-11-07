@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="cs">
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pexeso</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-
-<h1>Pexeso</h1>
-
-<div id="cardContainer"></div>
-
-<script>
-    createCards();
-</script>
-
+    <div id="app">
+        <h1>Pexeso</h1>
+        <button id="restartButton">Restartovat</button>
+        <div id="gameContainer"></div>
+        <div id="info">
+            <span id="playerTurn">Na tahu: Hráč 1</span> |
+            <span id="moves">Počet tahů: 0</span>
+        </div>
+        <div id="scoreBoard">
+            <span id="score1">Hráč 1: 0 bodů</span> |
+            <span id="score2">Hráč 2: 0 bodů</span>
+        </div>
+    </div>
 </body>
 </html>
